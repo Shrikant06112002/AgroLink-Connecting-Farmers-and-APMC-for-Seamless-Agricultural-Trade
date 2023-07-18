@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Table + Detail View</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{% static 'table.css' %}">
+
+</head>
+
+<body>
+
+  <!-- partial:index.partial.html -->
+  <h1>
+  </h1>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            District
+          </th>
+          <th>
+            Market
+          </th>
+          <th>
+            Commodity
+          </th>
+          <th>
+            Min Price
+          </th>
+          <th>
+            Max Price
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in slots %}
+        <tr>
+          <td data-title='Provider Name'>
+            {{ slot.district }}
+          </td>
+          <td data-title='E-mail'>
+            {{ slot.market }}
+          </td>
+          <td data-title='Provider Name'>
+            {{ slot.commodity }}
+          </td>
+          <td data-title='E-mail'>
+            {{ slot.min_price }}
+          </td>
+          <td data-title='Provider Name'>
+            {{ slot.max_price}}
+          </td>     
+        </tr>
+        {% endfor %}
+
+
+
+        <div class='detail-nav'>
+          <button class='close'><a style="text-decoration: none;" href="{% url 'users:index' %}" > Close </a>
+          </button>
+        </div>
+        </div>
+  </main>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

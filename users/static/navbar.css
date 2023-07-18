@@ -1,0 +1,47 @@
+.navbar-nav a{
+    color: rgb(27, 112, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Nunito",sans-serif;
+}
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 200;
+    font-family: 'Bebas Neue', cursive;
+}
+#navbarNavDropdown{
+    /* display: flex; */
+    justify-content: right;
+}
+.dropdown-menu{
+    background-color:black;
+    color: black;
+}
+.dropdown-item{
+    color: black;
+}
+.dropdown-menu{
+    background-color: aqua;
+    margin-right: 50px;
+}
+
+.carousel-inner img{
+    height: 700px;
+}
+#navbar{
+    position:sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color:#bcc77e;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}

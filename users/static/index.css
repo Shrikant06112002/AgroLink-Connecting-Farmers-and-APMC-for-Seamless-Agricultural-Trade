@@ -1,0 +1,143 @@
+/* navbar */
+/* body{
+    background-color: aqua;
+    /* opacity: 0.75; */
+
+/* #about::before{
+    content: "";
+    background:url(./img/nature.jpg)  center center/cover;
+    position: absolute;
+    height: 1600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+} */
+#about::before{
+    content: "";
+    /* background:url(./img/bg-1.jpg)  center center/cover; */
+    background-color: #bcc77e;
+    position: absolute;
+    height: 1400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.74;
+    top: 0px;
+    left: 0px;
+}
+.navbar-nav a{
+    color: rgb(27, 112, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Nunito",sans-serif;
+}
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 200;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+#navbarNavDropdown{
+    /* display: flex; */
+    justify-content: right;
+}
+.carousel-inner img{
+    height: 800px;
+}
+#navbar{
+    position:sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color:#bcc77e;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#aboutus{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    background-color:black;
+    color: white;
+    padding: 8px 11px;
+}
+
+#aboutus_box{
+    height: 475px;
+    width: 1210px;
+    background-color:#374e21;
+    
+    color: white;
+}
+#about_us-text{
+    padding:20px 5px 5px 25px;
+    font-size: 1.1rem;
+}
+#about_img img{
+    padding-top: 20px;
+}
+#aboutus_box .display-6{
+    color: yellow;
+    font-family: 'Open Sans', sans-serif;
+
+    padding:2px 5px 5px 19px;
+}
+#aboutus_box .display-9{
+    font-family: 'Rubik', sans-serif;
+    padding:10px 5px 2px 19px;
+    font-size: 1.3rem;
+}
+#home h1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-size:3rem;
+    font-weight: 1000;
+    color: black;
+    /* font-family: 'Headland One', serif; */
+    font-family: 'Roboto Slab', serif;
+    /* background:#FFF; */
+}
+#home h2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 406px 50px 50px 610px;
+    width: max-content;
+    height: max-content;
+    font-size:1.5rem;
+    font-weight: 300;
+    color:black;
+    font-family: 'Headland One', serif;
+    /* background:#FFF; */
+}
+#first_img img{
+    opacity: 0.74;
+    z-index: -1;
+}
